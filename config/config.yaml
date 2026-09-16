@@ -1,0 +1,24 @@
+# Fraud detection pipeline configuration
+
+data:
+  raw_path: "data/raw/transactions.csv"      # TODO: point at your raw dataset
+  processed_path: "data/processed/transactions_processed.csv"
+  target_column: "is_fraud"
+  id_column: "transaction_id"
+  test_size: 0.2
+  random_state: 42
+
+features:
+  numeric_columns: []       # TODO: list numeric feature columns
+  categorical_columns: []   # TODO: list categorical feature columns to encode
+
+model:
+  type: "logistic_regression"   # e.g. logistic_regression | random_forest | gradient_boosting
+  output_path: "models/fraud_model.joblib"
+  params:
+    max_iter: 1000
+    class_weight: "balanced"    # fraud datasets are typically highly imbalanced
+
+evaluation:
+  metrics: ["precision", "recall", "f1", "roc_auc", "pr_auc"]
+  report_path: "models/evaluation_report.json"

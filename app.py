@@ -16,8 +16,24 @@ def load_resources():
     best_model = models['random_forest']
     explainer = shap.TreeExplainer(best_model)
     embed_model = SentenceTransformer('all-MiniLM-L6-v2')
-    chroma_client = chromadb.PersistentClient(path="data/chroma_db")
-    collection = chroma_client.get_collection("fraud_indicators")
+
+    # Rebuild the vector store fresh from the text knowledge base file
+    # (more reliable than persisting/uploading Chroma's binary files across environments)
+    with open('data/fraud_indicators_knowledge_base.txt') as f:
+        raw_text = f.read()
+    documents = [doc.strip() for doc in raw_text.split("DOCUMENT:") if doc.strip()]
+    doc_texts = ["DOCUMENT:" + doc for doc in documents]
+
+    embeddings = embed_model.encode(doc_texts).tolist()
+
+    chroma_client = chromadb.Client()  # in-memory, rebuilt fresh each app start
+    collection = chroma_client.create_collection(name="fraud_indicators")
+    collection.add(
+        documents=doc_texts,
+        embeddings=embeddings,
+        ids=[f"doc_{i}" for i in range(len(doc_texts))]
+    )
+
     feature_columns = list(best_model.feature_names_in_)
     return models, encoders, best_model, explainer, embed_model, collection, feature_columns
 

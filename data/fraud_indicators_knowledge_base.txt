@@ -1,0 +1,17 @@
+DOCUMENT: Vehicle Theft Claim Red Flags
+Common indicators reviewed by investigators include: claims filed shortly after a policy was purchased or coverage was increased; vehicles reported stolen in areas with unusually low recorded vehicle crime; inconsistent or vague accounts of where the vehicle was parked; delayed reporting to police; the claimant recently faced financial difficulty; the vehicle had a salvage or prior write-off history not disclosed at policy inception. Investigators note that no single indicator alone confirms fraud — patterns across multiple indicators warrant escalation.
+
+DOCUMENT: Staged Accident Indicators
+Staged or induced accidents often share features: low-speed rear-end collisions with disproportionately high injury or vehicle damage claims; multiple unrelated claimants present in a single vehicle; a passenger list that changes between the initial report and the claim form; claimants with a history of prior accident claims, especially soft-tissue injury claims; accident locations chosen for minimal traffic-camera coverage; independent witnesses who are later found to have a personal connection to the claimant.
+
+DOCUMENT: Weather and Catastrophe-Related Fraud
+During and after major weather events, investigators watch for: claims describing storm or flood damage that does not match recorded weather conditions at the claimed location and date; pre-existing damage misattributed to a recent weather event; claims submitted significantly after the event with no clear reason for the delay; contractors or repair estimates that appear inflated relative to typical regional costs for similar damage.
+
+DOCUMENT: Exaggerated or Inflated Claims
+Common patterns include: itemised losses that appear disproportionate to the reported incident severity; repeated minor claims from the same policyholder over a short period; repair or replacement costs significantly above typical market rates for the item or vehicle in question; a mismatch between the claimed incident severity and the claimed financial loss.
+
+DOCUMENT: Behavioural and Circumstantial Indicators
+Investigators are trained to treat the following as contextual flags requiring further verification, not proof of fraud: reluctance to provide documentation promptly; pressure to settle quickly; inconsistent statements between the initial report and follow-up interviews; unusually detailed knowledge of policy terms and claims processes for a first-time claimant; a claim filed close to a policy renewal or cancellation date.
+
+DOCUMENT: General Principles for Fraud Investigation
+No individual behavioural or statistical indicator is proof of fraud on its own. Investigators are expected to weigh multiple corroborating factors, verify claims against independent data sources where available (such as weather records, crime statistics, and vehicle history), and ensure that any escalation is proportionate and does not presume guilt. The purpose of a risk score or flagged indicator is to prioritise claims for human review, not to make an automated fraud determination.
